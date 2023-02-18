@@ -5,9 +5,14 @@ A Resilia está pensando em lançar um novo sistema de acompanhamento e para iss
 ### O que é para fazer?
 Para apoiar nesse sistema recebemos a tarefa de realizar essa modelagem e responder algumas perguntas com nosso modelo:
 
- - ⇨ Existem outras entidades além dessas três?  
- - ⇨ Quais são os principais campos e tipos?  
- - ⇨ Como essas entidades estão relacionadas? 
+ - ⇨ Existem outras entidades além dessas três?
+ Foi adicionada a entidade Facilitadores.
+ - ⇨ Quais são os principais campos e tipos?
+ Os principais campos são Turma, Turno, Facilitadores e Alunos.
+ - ⇨ Como essas entidades estão relacionadas?
+ Cada turma possui um facilitador e um certo número de alunos. Osntes alunos nas turmas variam dependendo do turno mas os facilitadores podem estar em duas turmas em turnos diferentes. A organização é feita utilizando chaves estrangeiras (FK)
+
+
 
 Vamos tentar pensar em 2 registros para cada entidade para checar o preenchimento das informações no nosso modelo.4
 
