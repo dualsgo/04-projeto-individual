@@ -5,11 +5,13 @@ A Resilia está pensando em lançar um novo sistema de acompanhamento e para iss
 ### O que é para fazer?
 Para apoiar nesse sistema recebemos a tarefa de realizar essa modelagem e responder algumas perguntas com nosso modelo:
 
- - ⇨ Existem outras entidades além dessas três?
+ - ⇨ Existem outras entidades além dessas três? <br>
  Foi adicionada a entidade Facilitadores.
- - ⇨ Quais são os principais campos e tipos?
+
+- ⇨ Quais são os principais campos e tipos?<br>
  Os principais campos são Turma, Turno, Facilitadores e Alunos.
- - ⇨ Como essas entidades estão relacionadas?
+
+- ⇨ Como essas entidades estão relacionadas?<br>
  Cada turma possui um facilitador e um certo número de alunos. Osntes alunos nas turmas variam dependendo do turno mas os facilitadores podem estar em duas turmas em turnos diferentes. A organização é feita utilizando chaves estrangeiras (FK)
 
 
@@ -19,3 +21,6 @@ Vamos tentar pensar em 2 registros para cada entidade para checar o preenchiment
 ### O que devo entregar? 
 
 A entrega deve ser realizada em um repositório do Github com um print do modelo proposto e um arquivo README respondendo as perguntas anteriores e apontando para os detalhes da modelagem proposta.
+
+
+<img src="./assets/sistema-resilia.png">
