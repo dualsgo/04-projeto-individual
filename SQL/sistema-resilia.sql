@@ -1,31 +1,41 @@
 
-CREATE TABLE `Curso` (
-    `nome_curso` VARCHAR(255),
-    `Turno` VARCHAR(255),
-    `data_inicio` INT,
-    `data_termino` INT
-);
+Table "Curso" {
+  "nome_curso" VARCHAR(255)
+  "Turno" VARCHAR(255)
+  "data_inicio" INT
+  "data_termino" INT
+}
 
-CREATE TABLE `Turmas` (
-    `Facilitadores` VARCHAR(255),
-    `Turno` VARCHAR(255),
-    `Alunos` VARCHAR(255)
-);
-CREATE TABLE `Facilitadores` (
-    `id` INT PRIMARY KEY,
-    `nome` VARCHAR(255),
-    `data_nascimento` INT
-);
+Table "Turmas" {
+  "Facilitadores" VARCHAR(255)
+  "Turno" VARCHAR(255)
+  "Alunos" VARCHAR(255)
+}
 
-CREATE TABLE `Alunos` (
-    `id` INT PRIMARY KEY,
-    `nome` VARCHAR(255),
-    `data_nascimento` INT,
-    `endereco` VARCHAR(255)
-);
+Table "Facilitadores" {
+  "nome" VARCHAR(255)
+}
 
-ALTER TABLE `Turmas` ADD FOREIGN KEY (`Turno`) REFERENCES `Curso` (`Turno`);
+Table "Alunos" {
+  "nome" VARCHAR(255)
+  "data_nascimento" INT
+  "endereco" VARCHAR(255)
+}
+Table "Endereco" {
+  "cep" VARCHAR(255)
+  "rua" VARCHAR(255)
+  "bairro" VARCHAR(255)
+  "UF" INT [pk]
 
-ALTER TABLE `Turmas` ADD FOREIGN KEY (`Alunos`) REFERENCES `Alunos` (`id`);
+}
 
-ALTER TABLE `Turmas` ADD FOREIGN KEY (`Facilitadores`) REFERENCES `Facilitadores` (`nome`);
+Ref:"Curso"."Turno" < "Turmas"."Turno"
+Ref:"Curso"."nome_curso" < "Turmas"."Facilitadores"
+
+Ref:"Alunos"."nome" < "Turmas"."Alunos"
+
+Ref:"Facilitadores"."nome" < "Turmas"."Facilitadores"
+Ref:"Facilitadores"."nome" < "Curso"."nome_curso"
+
+
+Ref:"Alunos"."endereco" < "Endereco"."cep"

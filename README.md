@@ -7,7 +7,7 @@ Para apoiar nesse sistema recebemos a tarefa de realizar essa modelagem e respon
 
  - Existem outras entidades além dessas três?
  
- Foi adicionada a entidade Facilitadores.
+ Foi adicionada a entidade Facilitadores e Endereco
 
 - Quais são os principais campos e tipos?
 
