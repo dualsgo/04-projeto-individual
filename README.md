@@ -1,4 +1,7 @@
-# PROJETO INDIVIDUAL Módulo 4 – Sistema Resilia
+# Projeto individual - Módulo 4 "Sistema Resilia"
+
+BOOTCAMP PROGRAMADORES CARIOCASResilia Educação, SENAC RJ e Prefeitura do Rio de Janeiro
+
 ### Contexto
 A Resilia está pensando em lançar um novo sistema de acompanhamento e para isso precisa de ajuda para modelar um banco de dados que vai armazenar seus cursos, turmas e alunos.
 
